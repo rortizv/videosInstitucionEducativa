@@ -1,4 +1,5 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import {formatDate} from '@angular/common';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../../services/api.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -17,7 +18,8 @@ export class ElementComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,
     private api: ApiService,
     @Inject(MAT_DIALOG_DATA) public editData: any,
-    private elementRef: MatDialogRef<ElementComponent>) { }
+    private elementRef: MatDialogRef<ElementComponent>,
+    @Inject(LOCALE_ID) private locale: string) { }
 
   ngOnInit(): void {
     this.elementForm = this.formBuilder.group({
@@ -43,11 +45,11 @@ export class ElementComponent implements OnInit {
   addVideoElement() {
     if (!this.editData) {
       if (this.elementForm.valid) {
+        const date = formatDate(this.elementForm.controls['fecha'].value,'MM-dd-yyyy',this.locale); 
+        this.elementForm.get('fecha')?.setValue(date);
         this.api.postVideo(this.elementForm.value)
           .subscribe({
             next: (res) => {
-              console.log(res);
-              
               alert("Video agregado satisfactoriamente")
               this.elementForm.reset();
               this.elementRef.close('save');
@@ -66,7 +68,6 @@ export class ElementComponent implements OnInit {
     this.api.updateVideo(this.elementForm.value, this.editData.id)
       .subscribe({
         next:(res)=>{
-          console.log(res);
           alert("Video actualizado satisfactoriamente");
           this.elementForm.reset();
           this.elementRef.close('update');

@@ -43,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule
   ],
   providers: [
-    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' }
+    // { provide: MAT_DATE_LOCALE, useValue: 'en-GB' }
   ],
   bootstrap: [AppComponent]
 })
