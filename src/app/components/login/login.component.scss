@@ -1,0 +1,39 @@
+// Queries for MOBILE view size
+@media (max-width: 599px) {
+    .myForm {        
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    mat-dialog-actions {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .password {
+        margin-top: -2rem;
+    }
+    .saveButton {
+        margin-top: -1rem;
+    }
+}
+
+// Queries for MOBILE view size
+@media (min-width: 1080px) {
+    .myForm {
+        padding-left: 20rem;
+    }
+}
+
+.saveButton {
+    background-color: limegreen;
+    color: #FFFFFF;
+}
+
+mat-form-field {
+    margin: 10px;
+    transform: scale(0.7);
+}

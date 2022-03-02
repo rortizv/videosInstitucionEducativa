@@ -1,0 +1,37 @@
+// Queries for MOBILE view size
+@media (max-width: 599px) {
+  .container {
+    height: 90%;
+  }
+}
+
+// Queries for iPAD view size
+@media (min-width: 600px) and (max-width: 1079px) {
+  .container {
+    height: 60%;
+  }
+}
+
+// Queries for Desktop view size
+@media (min-width: 1080px) {
+  .container {
+    height: 40%;
+  }
+}
+.myInputs {
+  padding-top: 10px;
+}
+
+.saveButton {
+    background-color: limegreen;
+    color: #FFFFFF;
+}
+
+mat-form-field {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.myDialog {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+{
+  "videosList": [
+    {
+      "nombreEvento": "Grados 2020",
+      "descripcionVideo": "Grados colegio El Maestro año 2020",
+      "duracion": "00:34:33",
+      "fecha": "2020-11-12T05:00:00.000Z",
+      "urlVideo": "www.google.com.co",
+      "id": 3
+    },
+    {
+      "nombreEvento": "Convivencia grado 8vo",
+      "descripcionVideo": "Convivencia chicos de grado 8-B",
+      "duracion": "01:12:16",
+      "fecha": "2022-02-20T05:00:00.000Z",
+      "urlVideo": "www.magic.com.co",
+      "id": 7
+    },
+    {
+      "nombreEvento": "Apple's key event",
+      "descripcionVideo": "Apple's macbook pro event",
+      "duracion": "00:36:54",
+      "fecha": "2021-10-15T05:00:00.000Z",
+      "urlVideo": "www.youtube.com",
+      "id": 8
+    },
+    {
+      "nombreEvento": "Aniversario colegio El Maestro",
+      "descripcionVideo": "Aniversario fiesta",
+      "duracion": "01:04:26",
+      "fecha": "2020-12-10T05:00:00.000Z",
+      "urlVideo": "www.myurl.com",
+      "id": 10
+    },
+    {
+      "nombreEvento": "Inauguración intercolegiados",
+      "descripcionVideo": "Evento inauguración",
+      "duracion": "02:12:56",
+      "fecha": "2021-09-15T05:00:00.000Z",
+      "urlVideo": "www.intercolegiados.com",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "user": "admin",
+      "password": "12345"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

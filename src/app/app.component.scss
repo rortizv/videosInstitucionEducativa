@@ -1,0 +1,140 @@
+// Queries for MOBILE view size
+@media (max-width: 599px) {
+  .myToolbar {
+      background-color: #1666dd;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0px 0px 0px;
+  }
+  .thisTable {
+    overflow: auto;
+  }
+  .subTitle {
+    text-align: center;
+  }
+  .logoutBtn {
+    margin: 1rem;
+  }
+}
+
+// Queries for iPAD view size
+@media (min-width: 600px) and (max-width: 1079px) {
+  .myToolbar {
+      background-color: #1666dd;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0px 0px 0px;
+  }
+  .thisTable {
+    overflow: auto;
+  }
+  table {
+    width: 100%;
+  }
+  .subTitle {
+    text-align: center;
+  }
+  .logoutBtn {
+    margin: 1rem;
+  }
+  .appLogin {
+    margin-top: 0;
+  }
+}
+
+// Queries for Desktop view size
+@media (min-width: 1080px) {
+  .myToolbar {
+      background-color: #1666dd;
+      color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+  }
+  table.mat-table.cdk-table.mat-elevation-z8 {
+    width: 100%;
+  }
+  mat-toolbar.mat-toolbar.myToolbar.mat-toolbar-single-row {
+    padding: 3 rem;
+  }
+  .logoutBtn {
+    margin-left: 650%;
+  }
+}
+
+.mainTitle {
+  font-weight: 600;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px #303030;
+}
+
+.subTitle {
+  font-size: 25px;
+  text-shadow: 2px 2px 5px #303030;
+}
+
+.loginIcon {
+  margin-right: 5px;
+}
+
+.mat-menu-content {
+    padding: 1rem;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mainContent {
+    padding: 2rem;
+}
+
+.createButton {
+    background-color: #0C5AF7;
+    color: #ffffff;
+}
+
+.videoInputs {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+// .myActions {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.editButton {
+  background-color: #FFC107;
+  color: #ffffff;
+  transform: scale(0.8);
+}
+
+.deleteButton {
+  background-color: #FF3547;
+  color: #ffffff;
+  transform: scale(0.8);
+}
+
+th.mat-header-cell.cdk-header-cell.cdk-column-descripcionVideo.mat-column-descripcionVideo.ng-star-inserted,
+th.mat-header-cell.cdk-header-cell.cdk-column-nombreEvento.mat-column-nombreEvento.ng-star-inserted,
+th.mat-header-cell.cdk-header-cell.cdk-column-duracion.mat-column-duracion.ng-star-inserted,
+th.mat-header-cell.cdk-header-cell.cdk-column-fecha.mat-column-fecha.ng-star-inserted,
+th.mat-header-cell.cdk-header-cell.cdk-column-urlVideo.mat-column-urlVideo.ng-star-inserted,
+th.mat-header-cell.cdk-header-cell.cdk-column-actions.mat-column-actions.ng-star-inserted
+ {
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  overflow: auto;
+}
+
+mat-toolbar.mat-toolbar.myToolbar.mat-toolbar-single-row {
+  height: auto;
+}
